@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Portfolio</title>
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg-light">
+    <div class="wrapper">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Data Portfolio</a>
+        </nav>    
+        <div class="jumbotron">
+            <h1 class="display-4">Data Science, Data Engineering, Data Analytics, & Data Visualization Projects</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About Me<br> <small>Part Data Wizard Part Human</small></h3>
+                </div>
+                <div class="col-md-8">
+                    <p> "Hello! I am a versatile professional with expertise in multiple areas of data science and analytics.</p>
+                    <br> <!-- Inserting a line break -->
+                    <p> As a data scientist, I excel in leveraging advanced statistical modeling techniques and machine learning algorithms to extract valuable insights from complex datasets. My experience includes working on predictive modeling, and supervised classification problems. 
+                        A notable project I have is a supervised classification model that predicts wine quality based on quite a few input features. Another project I have was building a supervised classification model to identify a type of customer based on feature inputs. the model 
+                        took the inputs and classified a person as a potential match. This match was then validated using cross validation and then backing checking that with another exisitng database to validate the match. 
+                    </p>
+                    <br> <!-- Inserting a line break -->
+                    <p> In addition to my data science skills, I am also a proficient in data engineering. I have a strong background in designing and implementing batch data pipelines, data integration, and data modeling solutions. I am adept at creating ETL data pipelines from various 
+                        sources, ensuring data quality and integrity throughout the pipeline. A notable ETL project was creating an end to end ETL Sharepiont pipeline. This pipeline ingested an Adobe Analytics csv report that was emailed weekly. I used Microsoft Power Automate to pull the 
+                        csv from email and turn it into an excel file, from there I used Power Query to clean, transform, and model the data and output a new clean excel file into a sharepoint folder.
+                    </p>
+                    <br> <!-- Inserting a line break -->
+                    <p> As a data analyst, I possess a keen eye for detail and a deep understanding of EDA. I have a knack for identifying patterns, trends, and outliers in data, allowing me to uncover hidden gems and present meaningful findings to stakeholders. I am experienced in data 
+                        cleansing, data visualization, and statistical analysis techniques. I used SQL frequently to pull data for AD Hoc reports and to build out dashboards in Power BI.
+                    </p>
+                    <br> <!-- Inserting a line break -->
+                    <p> Lastly to round out the datastack, I am skilled at data visualization. My experience in building visuals is in Python using plotly and matplotlib, excel and pivot table to make interactive dashboards, and Power BI to do data modeling and visualization of that data.
+                        I have a skill for creating compelling visualizations that effectively communicate complex information to both technical and non-technical audiences. I also take a great care for the UX and UI interface so the end users of my reports can focus on understanding the 
+                        data instead of trying to familarize themselves with the report function itself. In a previous role I frequently engineered reporting to be self sevice based, automated, and low maintenance. 
+                        
+                    </p>
+                    <br> <!-- Inserting a line break -->
+                    <p> My passion for data and analytics drives me to stay updated with the latest industry trends and technologies. I am continuously expanding my knowledge and skills to tackle new challenges and deliver innovative solutions from the latest cloud tools and leveraging the advanced capabilities of AI.                   
+                        In summary, I bring a multidimensional skill set encompassing data science, data engineering, data analysis, and data visualization. I am enthusiastic about applying my expertise to solve real-world problems and drive data-informed decision-making."
+                    </p>
+                </div>         
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <form class="bg-dark">
+                        <p>Filter Search</p>
+                        <ul class="list-group bg-dark">
+                        <li class="list-group-item bg-dark">
+                            <label for = "date">Enter Date</label>
+                            <input type = "text" placeholder="1/10/2010" id="datetime" class="form-control" />
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <label for = "city">Enter a City</label>
+                            <input type="text" placeholder="roswell" id="city" class="form-control" />
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <label for = "state">Enter a State</label>
+                            <input type="text" placeholder="ca" id="state" class="form-control" />
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <label for = "country">Enter a Country</label>
+                            <input type="text" placeholder="us" id="country" class="form-control" />
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <label for = "shape">Enter a Shape</label>
+                            <input type="text" placeholder="circle" id="shape" class="form-control" />
+                        </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="col-md-9">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Country</th>
+                                <th>Shape</th>
+                                <th>Duration</th>
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+</html>
